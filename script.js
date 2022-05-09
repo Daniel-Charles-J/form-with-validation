@@ -11,7 +11,7 @@ const inputArray = [userName,email,password,confirmPassword];
 const showError=function(input,message){
         let formElement=input.parentElement;
         formElement.classList='form-control error';
-        let small=document.querySelector('small');
+        let small=formElement.querySelector('small');
         small.innerText=message;
 
 }

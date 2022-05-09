@@ -69,7 +69,7 @@ input{
 .btn:hover{
     background-color: rgb(59, 59, 61);
 }
-.form-control .error input{
+.form-control .error{
     border-color: var(--failure);
 }
 
