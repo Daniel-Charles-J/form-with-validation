@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form with server side validation</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Connect With Us</h2>
-        <form action="#" class="form" id="form">
-            <div class="form-control">
-                <label for="name">Enter Your Name</label>
-                <input type="text" id="name" name="userName" placeholder="Enter Your Name"/>
-                <small>User Name is Required</small>
-            </div>
-            <div class="form-control">
-                <label for="email">Enter Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Mail Id"/>
-                <small>Mail Id Required</small>
-            </div>
-            <div class="form-control">
-                <label for="password">Enter Your Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter Your PassWord"/>
-                <small>User Name is Required</small>
-            </div>
-            <div class="form-control">
-                <label for="confirmPassword">Enter Your Confirm Password</label>
-                <input type="password" id="confirmPassword" name="Confirmpassword" placeholder="Enter Your PassWord"/>
-                <small>User Name is Required</small>
-            </div>
-            <button class="btn" type="submit">Submit</button>
-            
-        </form>
+      <h2>Connect with us</h2>
+      <form action="#" class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter Username"
+          />
+          <small>Username is Required</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter Email Address"
+          />
+          <small>Email is Required</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <small>Password is Required</small>
+        </div>
+
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+          />
+          <small>Conform Password is Required</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
